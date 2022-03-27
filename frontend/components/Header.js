@@ -5,6 +5,7 @@ export default function Header() {
     <>
       <div className="">
         <div className="container mx-auto w-full">
+          <Image src="/images/logo.png" width={10} height={10} />
           Home
           Products
           SignIn
