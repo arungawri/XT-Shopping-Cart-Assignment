@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Login</title>
+        <title>Home</title>
       </Head>
 
       <h1 className="text-3xl font-bold underline">
-        Login
+        Home
       </h1>
     </>
   )
