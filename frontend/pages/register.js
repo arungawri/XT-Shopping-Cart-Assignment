@@ -1,14 +1,14 @@
 import Head from 'next/head'
 
-export default function Plp() {
+export default function Register() {
   return (
     <>
       <Head>
-        <title>PLP</title>
+        <title>Register</title>
       </Head>
 
       <h1 className="text-3xl font-bold underline">
-        PLP
+        Register
       </h1>
     </>
   )

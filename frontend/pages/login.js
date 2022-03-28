@@ -1,14 +1,14 @@
 import Head from 'next/head'
 
-export default function Home() {
+export default function Login() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Login</title>
       </Head>
 
       <h1 className="text-3xl font-bold underline">
-        Home
+        Login
       </h1>
     </>
   )
