@@ -7,9 +7,18 @@ export default function Register() {
         <title>Register</title>
       </Head>
 
-      <h1 className="text-3xl font-bold underline">
-        Register
-      </h1>
+      <div className="">
+        Signup
+        We do not share your personal details with anyone.
+      </div>
+      <div className="">
+        <input type="text" placeholder='First Name' />
+        <input type="text" placeholder='Last Name' />
+        <input type="text" placeholder='Email' />
+        <input type="password" placeholder='Password' />
+        <input type="password" placeholder='Confirm Password' />
+        <button>Signup</button>
+      </div>
     </>
   )
 }

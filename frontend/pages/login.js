@@ -7,9 +7,14 @@ export default function Login() {
         <title>Login</title>
       </Head>
 
-      <h1 className="text-3xl font-bold underline">
-        Login
-      </h1>
+      <div className="">Login</div>
+      <div className="">Get access to your Orders, Wishlist and Recommendations</div>
+
+      <div className="">
+        <input type="text" placeholder='Email' />
+        <input type="password" placeholder='Password' />
+        <button>Login</button>
+      </div>
     </>
   )
 }

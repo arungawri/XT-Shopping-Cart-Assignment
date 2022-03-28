@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Categories from '../components/Categories'
+import Products from '../components/Products'
 
 export default function Plp() {
   return (
@@ -7,9 +9,8 @@ export default function Plp() {
         <title>PLP</title>
       </Head>
 
-      <h1 className="text-3xl font-bold underline">
-        PLP
-      </h1>
+      <Categories />
+      <Products />
     </>
   )
 }
