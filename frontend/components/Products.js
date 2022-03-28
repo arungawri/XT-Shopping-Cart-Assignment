@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { useState, useEffect } from 'react'
 
 export default function Categories() {
@@ -20,10 +19,6 @@ export default function Categories() {
 
 	return (
 		<>
-			<Head>
-				<title>Categories</title>
-			</Head>
-
 			<h1 className="text-3xl font-bold underline">
 				Products
 			</h1>
