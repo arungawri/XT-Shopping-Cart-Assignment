@@ -21,6 +21,7 @@ const Carousel = () => {
 	if (!data) return <p>No Category data</p>
 
 	return (
+		<div className="container mx-auto">
 		<ResponsiveCarousel showArrows>
 			{data.map((banner) => (
 				<Image
@@ -31,6 +32,7 @@ const Carousel = () => {
 				/>
 			))}
 		</ResponsiveCarousel>
+		</div>
 	)
 }
 

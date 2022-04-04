@@ -26,17 +26,8 @@ export default function Home() {
         <title>Home</title>
       </Head>
 
-      <h1 className="text-3xl font-bold underline">
-        Home
-      </h1>
-      <div className="text-xl">
-        Carousel
-      </div>
       <Carousel />
 
-      <h1 className="text-xl">
-        Grid/Component Alternate left right
-      </h1>
       {data.map((category, index) => (
         <HomeCateogory category={category} key={category.id} index={index} />
       ))}

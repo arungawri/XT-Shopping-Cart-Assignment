@@ -6,24 +6,34 @@ export default function Header() {
     <>
       <div className="">
         <div className="container mx-auto w-full flex justify-between">
-          <div className="">
-            <Image src="/images/logo.png" width={100} height={40} />
-            <Link href="/">
-              Home
-            </Link>
-            <Link href="/plp">
-              Products
-            </Link>
+          <div className="flex items-end">
+            <Image src="/images/logo.png" width={180} height={70} />
+            <div className="ml-48 mb-2 text-gray-500 text-sm">
+              <Link href="/">
+                Home
+              </Link>
+            </div>
+            <div className="pl-6 mb-2 text-gray-500 text-sm">
+              <Link href="/plp">
+                Products
+              </Link>
+            </div>
           </div>
-          <div className="">
-            <Link href="/login">
-              SignIn
-            </Link>
-            <Link href="/register">
-              Regsiter
-            </Link>
-            <div className="">
-              Cart
+          <div className="flex flex-col items-stretch">
+            <div className="flex">
+              <div className="text-gray-500 text-sm pr-2">
+                <Link href="/login">
+                  SignIn
+                </Link>
+              </div>
+              <div className="text-gray-500 text-sm">
+                <Link href="/register">
+                  Regsiter
+                </Link>
+              </div>
+            </div>
+            <div className="bg-gray-100 h-full mt-2 pt-5 pl-5">
+              0 items
             </div>
           </div>
         </div>
