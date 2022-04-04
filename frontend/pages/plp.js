@@ -9,8 +9,10 @@ export default function Plp() {
         <title>PLP</title>
       </Head>
 
+      <div className="flex">
       <Categories />
       <Products />
+      </div>
     </>
   )
 }

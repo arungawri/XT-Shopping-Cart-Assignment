@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Image from "next/image"
 import { useState, useEffect } from 'react'
+import Carousel from '../components/Carousel'
 import HomeCateogory from '../components/HomeCateogory'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 
 export default function Home() {
   const [data, setData] = useState(null)
@@ -34,13 +32,8 @@ export default function Home() {
       <div className="text-xl">
         Carousel
       </div>
-      <Carousel showArrows>
-        <Image src={"/images/offers/offer1.jpg"} width={1000} height={300} />
-        <Image src={"/images/offers/offer2.jpg"} width={1000} height={300} />
-        <Image src={"/images/offers/offer3.jpg"} width={1000} height={300} />
-        <Image src={"/images/offers/offer4.jpg"} width={1000} height={300} />
-        <Image src={"/images/offers/offer5.jpg"} width={1000} height={300} />
-      </Carousel>
+      <Carousel />
+
       <h1 className="text-xl">
         Grid/Component Alternate left right
       </h1>

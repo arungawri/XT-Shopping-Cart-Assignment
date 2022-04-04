@@ -18,7 +18,7 @@ export default function Categories() {
   if (!data) return <p>No Category data</p>
 
   return (
-    <>
+    <div>
       <h1 className="text-3xl font-bold underline">
         Categories
       </h1>
@@ -29,6 +29,6 @@ export default function Categories() {
           </div>
         </div>
       ))}
-    </>
+    </div>
   )
 }
