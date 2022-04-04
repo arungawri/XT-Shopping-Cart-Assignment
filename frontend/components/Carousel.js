@@ -21,7 +21,7 @@ const Carousel = () => {
 	if (!data) return <p>No Category data</p>
 
 	return (
-		<div className="container mx-auto">
+		<div className="container mx-auto border-b">
 		<ResponsiveCarousel showArrows>
 			{data.map((banner) => (
 				<Image

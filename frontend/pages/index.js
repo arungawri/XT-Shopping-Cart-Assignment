@@ -28,7 +28,7 @@ export default function Home() {
 
       <Carousel />
 
-      {data.map((category, index) => (
+      {data.sort((a, b) => a.order - b.order).map((category, index) => (
         <HomeCateogory category={category} key={category.id} index={index} />
       ))}
     </>
