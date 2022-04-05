@@ -7,7 +7,11 @@ export default function Header() {
       <div className="border-b drop-shadow-sm">
         <div className="container mx-auto w-full flex justify-between">
           <div className="flex items-end">
-            <Image src="/images/logo.png" width={180} height={70} />
+            <div className="cursor-pointer">
+              <Link href="/">
+                <Image src="/images/logo.png" width={180} height={70} />
+              </Link>
+            </div>
             <div className="ml-48 mb-2 text-gray-500 text-sm">
               <Link href="/">
                 Home

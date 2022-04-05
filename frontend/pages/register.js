@@ -7,17 +7,22 @@ export default function Register() {
         <title>Register</title>
       </Head>
 
-      <div className="">
-        Signup
-        We do not share your personal details with anyone.
+      <div className="container mx-auto flex">
+        <div className="pl-20">
+          <div className="text-3xl font-bold pt-20">Signup</div>
+          <div className="pt-10">We do not share your personal details with anyone.</div>
+        </div>
+        <div className="flex flex-col p-10 pl-13 w-[50rem]">
+          <input type="text" placeholder='First Name' className="pt-10" />
+          <input type="text" placeholder='Last Name' className="pt-20" />
+          <input type="text" placeholder='Email' className="pt-20" />
+          <input type="password" placeholder='Password' className="pt-20" />
+          <input type="password" placeholder='Confirm Password' className="pt-20" />
+          <button className='text-white bg-pink-800 p-2 font-extralight mt-10'>Signup</button>
+        </div>
       </div>
+
       <div className="">
-        <input type="text" placeholder='First Name' />
-        <input type="text" placeholder='Last Name' />
-        <input type="text" placeholder='Email' />
-        <input type="password" placeholder='Password' />
-        <input type="password" placeholder='Confirm Password' />
-        <button>Signup</button>
       </div>
     </>
   )
