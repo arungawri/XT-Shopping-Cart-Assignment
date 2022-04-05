@@ -1,7 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useSelector } from '../store'
 
 export default function Header() {
+  const { cartItems } = useSelector((state) => state.cart)
+
   return (
     <>
       <div className="border-b drop-shadow-sm">
@@ -37,7 +40,7 @@ export default function Header() {
               </div>
             </div>
             <div className="bg-gray-100 h-full mt-2 pt-5 pl-5">
-              0 items
+              {cartItems.length} item(s)
             </div>
           </div>
         </div>
