@@ -9,9 +9,11 @@ export default function Plp() {
         <title>PLP</title>
       </Head>
 
+      <div className="container mx-auto">
       <div className="flex">
       <Categories />
       <Products />
+      </div>
       </div>
     </>
   )

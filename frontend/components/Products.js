@@ -20,19 +20,18 @@ export default function Categories() {
 
 	return (
 		<div>
-			<h1 className="text-3xl font-bold underline">
-				Products
-			</h1>
 			<div className="grid grid-cols-4 gap-4">
 			{data.map(product => (
-				<div key={product.id} className="">
-					<div className="">
+				<div key={product.id} className="pl-4 py-4 border-b border-dashed">
+					<div className="font-semibold">
 						{product.name}
 					</div>
-					<Image src={product?.imageURL.replace("/static", "") ?? ""} width={100} height={100} />
-					<div className="">{product.description}</div>
-					<div className="">{product.price}</div>
-					<button>Buy Now</button>
+					<Image src={product?.imageURL.replace("/static", "") ?? ""} width={300} height={300} />
+					<div className="bg-gray-100 p-2 font-normal">{product.description.substring(0, 120)}</div>
+					<div className="flex flex-row items-center justify-between pt-2">
+						<div className="">MRP Rs.{product.price}</div>
+						<button className="text-white bg-pink-800 p-2 px-2 font-extralight">Buy Now</button>
+					</div>
 				</div>
 			))}
 			</div>
