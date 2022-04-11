@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import Carousel from '../components/Carousel'
+import Cart from '../components/Cart'
 import HomeCateogory from '../components/HomeCateogory'
 
 export default function Home() {
   const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(false)
+  const [showCartModal, setShowCartModal] = useState(false)
 
   useEffect(() => {
     setLoading(true)
@@ -27,6 +29,7 @@ export default function Home() {
       </Head>
 
       <Carousel />
+      {showCartModal && <Cart />}
 
       {data.sort((a, b) => a.order - b.order).map((category, index) => (
         <HomeCateogory category={category} key={category.id} index={index} />
