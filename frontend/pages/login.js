@@ -1,6 +1,15 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 export default function Login() {
+  const router = useRouter();
+
+  const handleFormAction = (event) => {
+    event.preventDefault();
+    // authentication from the backend
+    router.push("/")
+  }
+
   return (
     <>
       <Head>
@@ -11,11 +20,13 @@ export default function Login() {
           <div className="text-3xl font-bold pt-20">Login</div>
           <div className="pt-10">Get access to your Orders, Wishlist and Recommendations</div>
         </div>
-        <div className="flex flex-col p-10 pl-13 w-[50rem]">
-          <input type="text" placeholder='Email' className="pt-10" />
-          <input type="password" placeholder='Password' className="pt-20" />
-          <button className='text-white bg-pink-800 p-2 font-extralight mt-10'>Login</button>
-        </div>
+        <form onSubmit={handleFormAction}>
+          <div className="flex flex-col p-10 pl-13 w-[50rem]">
+            <input required={true} type="email" placeholder='Email' className="pt-10" />
+            <input required={true} type="password" placeholder='Password' className="pt-20" />
+            <button type='submit' className='text-white bg-pink-800 p-2 font-extralight mt-10'>Login</button>
+          </div>
+        </form>
       </div>
     </>
   )
