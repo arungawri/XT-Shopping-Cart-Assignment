@@ -5,6 +5,16 @@ export default function Categories() {
 	const [data, setData] = useState(null)
 	const [isLoading, setLoading] = useState(false)
 
+	const handleButtonClick = (id) => {
+		fetch('http://localhost:5001/addToCart', {
+			method: 'POST'
+		})
+			.then((res) => res.json())
+			.then(data => {
+				console.log(data);
+			});
+	}
+
 	useEffect(() => {
 		setLoading(true)
 		fetch('http://localhost:5001/products')
@@ -30,7 +40,7 @@ export default function Categories() {
 					<div className="bg-gray-100 p-2 font-normal">{product.description.substring(0, 120)}</div>
 					<div className="flex flex-row items-center justify-between pt-2">
 						<div className="">MRP Rs.{product.price}</div>
-						<button className="text-white bg-pink-800 p-2 px-2 font-extralight">Buy Now</button>
+						<button onClick={() => handleButtonClick(product.id)} className="text-white bg-pink-800 p-2 px-2 font-extralight">Buy Now</button>
 					</div>
 				</div>
 			))}
