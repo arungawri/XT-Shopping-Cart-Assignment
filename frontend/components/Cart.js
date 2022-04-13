@@ -1,4 +1,9 @@
+import { useDispatch } from 'react-redux'
+import { setIsCartOpen } from '../slices/cart'
+
 const Cart = () => {
+	const dispatch = useDispatch();
+
 	return (
 		<div
 			className="container mx-auto fixed z-10 inset-0 overflow-y-auto"
@@ -23,7 +28,7 @@ const Cart = () => {
 									My Cart (1 item)
 								</h3>
 							</div>
-							<div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-black sm:mx-0 sm:h-10 sm:w-10 m-2">
+							<div onClick={() => dispatch(setIsCartOpen(false))} className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-black hover:bg-gray-800 sm:mx-0 sm:h-10 sm:w-10 m-2">
 								{/* <!-- Heroicon name: outline/exclamation --> */}
 								<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="2">
 									<path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

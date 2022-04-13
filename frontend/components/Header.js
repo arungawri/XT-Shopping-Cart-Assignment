@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useSelector } from '../store'
+import { useSelector, useDispatch } from 'react-redux'
+import { setIsCartOpen } from '../slices/cart'
 
 export default function Header() {
   const { cartItems } = useSelector((state) => state.cart)
+  const dispatch = useDispatch()
 
   return (
     <>
@@ -39,7 +41,7 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-            <div className="bg-gray-100 h-full mt-2 pt-5 pl-5">
+            <div onClick={() => dispatch(setIsCartOpen(true))} className="bg-gray-100 h-full mt-2 pt-5 pl-5">
               {cartItems.length} item(s)
             </div>
           </div>

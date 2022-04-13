@@ -10,12 +10,14 @@ const slice = createSlice({
 	initialState,
 	reducers: {
 		setCartItems(state, action) {
-			state.cart.cartItems = action.payload;
+			state.cartItems = action.payload;
 		},
 		setIsCartOpen(state, action) {
-			state.cart.isCartOpen = action.payload;
+			state.isCartOpen = action.payload;
 		},
 	}
 })
 
-export const { reducer } = slice;
+export const { setCartItems, setIsCartOpen } = slice.actions;
+
+export default slice.reducer;
