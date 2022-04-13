@@ -41,7 +41,8 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-            <div onClick={() => dispatch(setIsCartOpen(true))} className="bg-gray-100 h-full mt-2 pt-5 pl-5">
+            <div onClick={() => dispatch(setIsCartOpen(true))} className="bg-gray-100 h-full mt-2 pt-5 p-2">
+              <Image src="/images/cart.svg" width={15} height={15} />
               {cartItems.length} item(s)
             </div>
           </div>

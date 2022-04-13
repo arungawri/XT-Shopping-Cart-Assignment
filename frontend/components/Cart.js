@@ -36,12 +36,25 @@ const Cart = () => {
 							</div>
 						</div>
 					</div>
-					<div className="bg-gray-300 py-3 sm:flex sm:flex-col gap-1">
+					<div className="bg-gray-300 pt-3 sm:flex sm:flex-col gap-1">
 						<div className="mt-3 w-full border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700">
 							Cart Item List
 						</div>
-						<div className="mx-4 mt-3 px-4 py-2 bg-white text-base font-thin text-gray-700">
-							You won&apost find it cheaper anywhere
+						<div className="mx-4 mt-3 px-4 py-2 bg-white text-base font-thin text-gray-700 mb-[300px]">
+							Least Price Guranteed: You won't find it cheaper anywhere
+						</div>
+						<div className="mt-3 w-full border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700">
+							<div className="text-center mb-2">
+								Promo code can be applied on payment page
+							</div>
+							<div className="bg-pink-700 text-white px-3 py-2 flex justify-between">
+								<div className="">
+									Proceed to Checkout
+								</div>
+								<div className="">
+									Rs. 187
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
