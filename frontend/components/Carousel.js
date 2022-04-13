@@ -23,12 +23,13 @@ const Carousel = () => {
 	return (
 		<div className="container mx-auto border-b">
 		<ResponsiveCarousel showArrows>
-			{data.map((banner) => (
+				{data.map((banner, index) => (
 				<Image
 					src={banner?.bannerImageUrl.replace("/static", "") ?? ""}
 					alt={banner?.bannerImageAlt ?? ""}
 					width={1000}
 					height={300}
+					key={index}
 				/>
 			))}
 		</ResponsiveCarousel>

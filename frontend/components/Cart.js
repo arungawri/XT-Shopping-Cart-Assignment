@@ -23,10 +23,10 @@ const Cart = () => {
 									My Cart (1 item)
 								</h3>
 							</div>
-							<div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-black sm:mx-0 sm:h-10 sm:w-10 m-2">
+							<div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-black sm:mx-0 sm:h-10 sm:w-10 m-2">
 								{/* <!-- Heroicon name: outline/exclamation --> */}
-								<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+								<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="2">
+									<path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
 								</svg>
 							</div>
 						</div>
@@ -36,7 +36,7 @@ const Cart = () => {
 							Cart Item List
 						</div>
 						<div className="mx-4 mt-3 px-4 py-2 bg-white text-base font-thin text-gray-700">
-							You won't find it cheaper anywhere
+							You won&apost find it cheaper anywhere
 						</div>
 					</div>
 				</div>
