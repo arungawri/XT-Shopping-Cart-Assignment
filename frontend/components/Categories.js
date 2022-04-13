@@ -18,7 +18,7 @@ export default function Categories() {
   if (!data) return <p>No Category data</p>
 
   return (
-    <div className="w-[100rem] bg-gray-100" >
+    <div className="w-[100rem] bg-gray-100 hidden sm:block" >
       {data.map(category => (
         <div key={category.id} className="border-b pl-8 py-2 font-thin">
           <div className="">

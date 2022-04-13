@@ -30,7 +30,7 @@ export default function Categories() {
 
 	return (
 		<div>
-			<div className="grid grid-cols-4 gap-4">
+			<div className="grid grid-cols-1 p-2 sm:p-0 sm:grid-cols-4 sm:gap-4">
 			{data.map(product => (
 				<div key={product.id} className="pl-4 py-4 border-b border-dashed">
 					<div className="font-semibold">
