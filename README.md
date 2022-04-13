@@ -1,6 +1,12 @@
 # XT Shopping Cart Assignment
 
-This is the base folder for the shopping cart exercise. You will have all the static assets and mock server responses available in this repo.
+Tech Stack Used: next.js, redux toolkit, canned mock server
+
+Terminal 1
+npm start
+
+Terminal 2
+cd frontend > npm start
 
 Lighthouse Score
 <img width="2560" alt="image" src="https://user-images.githubusercontent.com/5351896/163113051-755c8f1d-b929-46c4-b610-11fef161f4ff.png">
