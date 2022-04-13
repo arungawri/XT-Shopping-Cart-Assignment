@@ -14,7 +14,7 @@ export default function Header() {
           <div className="flex items-end">
             <div className="cursor-pointer">
               <Link href="/">
-                <Image src="/images/logo.png" width={180} height={70} />
+                <Image src="/images/logo.png" width={180} height={70} alt="Sabka Baazar" />
               </Link>
             </div>
             <div className="ml-48 mb-2 text-gray-500 text-sm">

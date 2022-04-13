@@ -36,7 +36,7 @@ export default function Categories() {
 					<div className="font-semibold">
 						{product.name}
 					</div>
-					<Image src={product?.imageURL.replace("/static", "") ?? ""} width={300} height={300} />
+					<Image src={product?.imageURL.replace("/static", "") ?? ""} width={300} height={300} alt="Product description" />
 					<div className="bg-gray-100 p-2 font-normal">{product.description.substring(0, 120)}</div>
 					<div className="flex flex-row items-center justify-between pt-2">
 						<div className="">MRP Rs.{product.price}</div>
